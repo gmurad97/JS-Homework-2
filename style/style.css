@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2f3640;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+}
+
+.block:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+.block-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
