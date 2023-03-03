@@ -1,17 +1,17 @@
-function transformFigure(e, boolRotate) {
+function transformFigure(elm, boolRotate){
     if(boolRotate){
-        e.style.transform = "rotateZ(55deg)";
+        elm.style.transform = "rotateZ(32deg)";
     }
     else{
-        e.style.transform = "rotateZ(0deg)";
+        elm.style.transform = "rotateZ(0deg)";
     }
 }
 
-function backfaceRotate(e, boolBackFace){
+function backfaceRotate(elm, boolBackFace){
     if(boolBackFace){
-        e.style.transform = "rotateX(180deg)";
+        elm.style.transform = "rotateY(180deg) rotateZ(32deg)";
     }
     else{
-        e.style.transform = "rotateX(0deg)";
+        elm.style.transform = "rotateY(0deg) rotateZ(32deg)";
     }
 }
